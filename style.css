@@ -27,11 +27,12 @@ img {
 
 body {
   display: grid;
-  height: 100svh;
-  padding: 24px;
+  min-height: 100svh;
+  padding: clamp(24px, 13.5vh, 72px) 24px 24px;
   margin: 0;
   place-items: center;
   text-align: center;
+  align-content: center;
   
   color: #fff;
   background: var(--black);
@@ -113,7 +114,7 @@ nav a {
 
 footer {
   font-size: 11px;
-  position: absolute;
+  padding-top: 24px;
   bottom: 20px;
 
   & a {
